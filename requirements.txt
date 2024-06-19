@@ -1,9 +1,9 @@
-streamlit==1.8.1
+streamlit==1.35.0
 pandas==1.3.5
 numpy==1.21.5
 google-cloud-bigquery==2.30.1
 google-auth==2.3.3
 regex==2021.11.10
 langchain-core==0.1.0  # Example version, adjust as necessary
-langchain-community==0.1.0  # Example version, adjust as necessary
-langchain-google-vertexai==0.1.0  # Example version, adjust as necessary
+langchain-community  # Example version, adjust as necessary
+langchain-google-vertexai  # Example version, adjust as necessary
