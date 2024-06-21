@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import regex as re
@@ -97,7 +98,7 @@ def get_data_dictionary(table_name: str) -> str:
         name = name_ref.split('_Data_Dict')[0] + '_Data_Dict'
         st.write(name)
         # Execute the query to get the data dictionary.
-        client = bigquery.Client.from_service_account_json(r"C:\Users\vn57bij\Downloads\wmt-ca-customer-insights-dev-772a08c2372f 1 (1).json")
+        client = client = bigquery.Client()
         query_job = client.query(f'SELECT * FROM {name}')  # API request
         # Wait for the query to finish and get the results.
         rows = query_job.result()
